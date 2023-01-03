@@ -1,0 +1,79 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: linear-gradient(to bottom, rgb(218, 216, 216), rgb(56, 56, 56));
+    height: 611px;
+}
+.menu{
+    background: linear-gradient(to bottom, rgb(82, 41, 102), rgb(65, 34, 80), rgb(37, 24, 44));
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+    height: 500px;
+    width: 700px;
+}
+#input1 , #input2{
+    height: 50px;
+    width: 300px;
+
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: block;
+
+    font-size: large;
+    color: black;
+}
+#but{
+    height: 100px;
+    width: 200px;
+
+    position: relative;
+    top: 50px;
+    left: 250px;
+
+    background:  rgb(82, 41, 102);
+    border-width: 10px;
+    border-radius: 50px;
+    border-color: rgb(116, 45, 151);
+    border-style: solid;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+}
+#select{
+    height: 50px;
+    width: 100px;
+
+    position: relative;
+    top: 30px;
+    left: 300px;
+
+    border: 0;
+    background: rgb(116, 45, 151);
+    color: white;
+    font-size: large;
+}
+#but:hover{
+    background: rgb(111, 53, 140);
+    box-shadow: 10px 10px 100px rgb(195, 118, 234);
+}
+#res{
+    margin-top: 80px;
+    margin-left: 280px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: white;
+}
