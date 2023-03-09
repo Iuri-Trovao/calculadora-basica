@@ -24,4 +24,4 @@ function calcular() {
 }
 
 let button = document.getElementById('but')
-button.onclick = calcular
+button.onclick = calcular()
