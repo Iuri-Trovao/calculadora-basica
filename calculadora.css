@@ -1,79 +1,74 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    border: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background: linear-gradient(to bottom, rgb(218, 216, 216), rgb(56, 56, 56));
-    height: 611px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(218, 216, 216), rgb(56, 56, 56));;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .menu{
-    background: linear-gradient(to bottom, rgb(82, 41, 102), rgb(65, 34, 80), rgb(37, 24, 44));
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px black;
-
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-
-    height: 500px;
-    width: 700px;
-}
-#input1 , #input2{
-    height: 50px;
-    width: 300px;
-
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    background: linear-gradient(to bottom, rgb(82, 41, 102), rgb(65, 34, 80), rgb(37, 24, 44));;
+    width: 30%;
+    height: 70%;
     border-radius: 10px;
-    display: block;
+    box-shadow: 10px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
-    font-size: large;
+input{
+    height: 30px;
+    width: 40%;
+    background: transparent;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: solid 5px black;
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button,  input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select{
+    background: linear-gradient(to bottom, rgb(82, 41, 102), rgb(65, 34, 80));
+    border: solid 3px black;
+    color: aliceblue;
+}
+select option{
+    background: rgb(82, 41, 102);
+}
+
+button{
+    background: transparent;
     color: black;
-}
-#but{
-    height: 100px;
-    width: 200px;
-
-    position: relative;
-    top: 50px;
-    left: 250px;
-
-    background:  rgb(82, 41, 102);
-    border-width: 10px;
-    border-radius: 50px;
-    border-color: rgb(116, 45, 151);
-    border-style: solid;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: white;
-}
-#select{
-    height: 50px;
-    width: 100px;
-
-    position: relative;
-    top: 30px;
-    left: 300px;
-
-    border: 0;
-    background: rgb(116, 45, 151);
-    color: white;
-    font-size: large;
-}
-#but:hover{
-    background: rgb(111, 53, 140);
-    box-shadow: 10px 10px 100px rgb(195, 118, 234);
-}
-#res{
-    margin-top: 80px;
-    margin-left: 280px;
+    border: solid 5px black;
+    height: 40px;
+    width: 40%;
     
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    color: white;
+
+    &:hover{
+        background: rgb(111, 53, 140);
+        box-shadow: 1px 1px 50px rgb(195, 118, 234);
+        transition: 3s;
+        border: 0;
+        color: aliceblue;
+    }
 }
+
+#res{
+    color: aliceblue;
+    font-size: 30px;
+}
+
